@@ -2,10 +2,11 @@ const express = require("express");
 const app = express();
 const ecomRoutes = require("./controller/ecom/index")
 const cors = require("cors")
-app.use(cors())
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
+app.use(cors())
 
 app.use('/ecom', ecomRoutes)
 

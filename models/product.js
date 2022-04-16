@@ -11,7 +11,10 @@ var productSchema = new mongoose.Schema({
     },
     quantity: {
         type: Number
-    }
+    },
+    img: {
+        type: String
+    },
 });
 
 var productModel = mongoose.model('product', productSchema);
